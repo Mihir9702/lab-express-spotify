@@ -1,0 +1,111 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+}
+
+.searchBody {
+  background: url("http://localhost:3000/images/spotify-background.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.searchBody form {
+  background: rgba(0, 0, 0, 0.2);
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBody form input {
+  padding: 0 40px 0 40px;
+  height: 10%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  color: white;
+}
+.searchBody form input::placeholder {
+  position: relative;
+  left: 40px;
+  color: white;
+  text-align: -20px;
+}
+.searchBody form input:focus {
+  outline-style: solid;
+  outline-color: rgba(0, 0, 0, 0.3);
+}
+.searchBody form input:focus::placeholder {
+  color: transparent;
+}
+.searchBody form button {
+  position: absolute;
+  transform: translateY(200%);
+  padding: 10px 40px;
+  background: #3bb273;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 600ms ease;
+}
+.searchBody form button:hover {
+  background: #359f67;
+}
+
+.container {
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.container figure {
+  background: #373737;
+}
+.container figcaption {
+  font-size: 20px;
+  font-family: cursive;
+  padding-bottom: 50px;
+}
+.container a {
+  position: relative;
+  text-decoration: none;
+  background: #3bb273;
+  color: white;
+  bottom: 50px;
+  padding: 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 600ms ease;
+}
+.container a:hover {
+  background: #359f67;
+}
+
+.tracks {
+  background: #373737;
+  display: grid;
+  place-items: center;
+  color: white;
+  padding: 10px;
+}
+
+.home {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  justify-content: center;
+  top: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

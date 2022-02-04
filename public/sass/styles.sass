@@ -1,0 +1,109 @@
+$green: #3bb273
+$dark: darken($green, 5%)
+$shade: rgba(0,0,0,0.3)
+$black: #373737
+$red: #e15554
+
+body
+    height: 100vh
+    width: 100%
+    display: grid
+    place-items: center
+    overflow-x: hidden
+    grid-template-columns: repeat(5, 1fr)
+    gap: 50px
+
+.searchBody
+    background: url('http://localhost:3000/images/spotify-background.jpeg')
+    background-size: cover
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+
+    form
+        background: rgba(0,0,0,0.2)
+        width: 500px
+        height: 300px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        input
+            padding: 0 40px 0 40px
+            height: 10%
+            background: $shade
+            border: 1px solid $shade
+            border-radius: 20px
+            color: white
+
+            &::placeholder
+                position: relative
+                left: 40px
+                color: white
+                text-align: -20px
+
+            &:focus
+                outline-style: solid
+                outline-color: $shade
+                &::placeholder
+                    color: transparent
+
+        button
+            position: absolute
+            transform: translateY(200%)
+            padding: 10px 40px
+            background: $green
+            color: white
+            font-size: 14px
+            border: none
+            border-radius: 20px
+            cursor: pointer
+            transition: background 600ms ease
+
+            &:hover
+                background: $dark
+
+.container
+    text-align: center
+    color: white
+    width: 100%
+    height: 100%
+
+    figure
+        background: $black
+
+    figcaption
+        font-size: 20px
+        font-family: cursive
+        padding-bottom: 50px
+
+    a
+        position: relative
+        text-decoration: none
+        background: $green
+        color: white
+        bottom: 50px
+        padding: 8px
+        border-radius: 20px
+        cursor: pointer
+        transition: background 600ms ease
+
+        &:hover
+            background: $dark
+
+.tracks
+    background: $black
+    display: grid
+    place-items: center
+    color: white
+    padding: 10px
+
+.home
+    cursor: pointer
+    padding: 10px
+    border: 1px solid black
+    border-radius: 50%
+    position: absolute
+    justify-content: center
+    top: 0
